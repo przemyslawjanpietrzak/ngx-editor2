@@ -1,11 +1,11 @@
 {
-  "name": "ngx-editor",
-  "version": "3.3.0",
+  "name": "ngx-editor2",
+  "version": "4.0.0",
   "description": "WYSIWYG Editor for Angular Applications",
   "license": "MIT",
   "scripts": {
     "build": "ng build --prod",
-    "build:package": "sh ./scripts/build.sh",
+    "build:package": "./node_modules/.bin/ng-packagr",
     "cz": "git-cz",
     "docs": "compodoc --config ./config/.compodocrc.json",
     "e2e": "ng e2e",
