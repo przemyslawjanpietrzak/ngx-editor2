@@ -1,11 +1,13 @@
 # NgxEditor
 
+This is fork of https://github.com/Sibiraj-S/ngx-editor with Angular6 support
+
 <p align="center">
   <a href="https://github.com/Sibiraj-S/ngx-editor">
    <img src="https://raw.githubusercontent.com/Sibiraj-S/ngx-editor/master/src/assets/icons/ngx-editor.png" alt="ngxEditor">
   </a>
 </p>
-<p align="center">A Simple WYSIWYG Editor for Angular5+ Applications.</p>
+<p align="center">A Simple WYSIWYG Editor for Angular6 Applications.</p>
 <p align="center">
   <a href="https://travis-ci.org/Sibiraj-S/ngx-editor">
     <img alt="Build Status" src="https://travis-ci.org/Sibiraj-S/ngx-editor.svg?branch=master">
@@ -28,9 +30,7 @@
 Install via Package managers such as [npm][npm] or [yarn][yarn]
 
 ```bash
-npm install ngx-editor --save
-# or
-yarn add ngx-editor
+npm install ngx-editor2 --save
 ```
 
 ### Usage
@@ -38,7 +38,7 @@ yarn add ngx-editor
 Import `ngx-editor` module
 
 ```typescript
-import { NgxEditorModule } from 'ngx-editor';
+import { NgxEditorModule } from 'ngx-editor2';
 
 @NgModule({
   imports: [ NgxEditorModule ]
@@ -47,10 +47,12 @@ import { NgxEditorModule } from 'ngx-editor';
 
 Import [font-awesome](https://github.com/FortAwesome/Font-Awesome) into your application
 
+Add `(window as any).global = window;` to your src/polyfills.ts file.
+
 Then in HTML
 
 ```html
-<app-ngx-editor [placeholder]="'Enter text here...'" [spellcheck]="true" [(ngModel)]="htmlContent"></app-ngx-editor>
+<ngx-editor [placeholder]="'Enter text here...'" [spellcheck]="true" [(ngModel)]="htmlContent"></ngx-editor>
 ```
 
 For `ngModel` to work, You must import `FormsModule` from `@angular/forms`
