@@ -31,12 +31,12 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Sibiraj-S/ngx-editor.git"
+    "url": "git+https://github.com/ssuperczynski/ngx-editor/ngx-editor.git"
   },
   "bugs": {
     "url": "https://github.com/Sibiraj-S/ngx-editor/issues"
   },
-  "homepage": "https://github.com/Sibiraj-S/ngx-editor",
+  "homepage": "https://github.com/ssuperczynski/ngx-editor",
   "peerDependencies": {
     "@angular/common": "^6.0.0",
     "@angular/core": "^6.0.0",
